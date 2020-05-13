@@ -3,23 +3,18 @@
   * Copyright 2018-2020 Medium Rare (undefined)
   */
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('aos'), require('jquery'), require('jquery-countdown'), require('scrollmonitor'), require('flickity'), require('ion-rangeslider'), require('isotope-layout'), require('jarallax'), require('plyr'), require('prismjs'), require('smooth-scroll'), require('@tanem/svg-injector'), require('twitter-fetcher'), require('typed.js'), require('smartwizard')) :
-  typeof define === 'function' && define.amd ? define(['exports', 'aos', 'jquery', 'jquery-countdown', 'scrollmonitor', 'flickity', 'ion-rangeslider', 'isotope-layout', 'jarallax', 'plyr', 'prismjs', 'smooth-scroll', '@tanem/svg-injector', 'twitter-fetcher', 'typed.js', 'smartwizard'], factory) :
-  (global = global || self, factory(global.theme = {}, global.AOS, global.jQuery, null, global.scrollMonitor, global.Flickity, null, global.Isotope, global.jarallax, global.Plyr, global.Prism, global.SmoothScroll, global.SVGInjector, global.twitterFetcher, global.Typed));
-}(this, (function (exports, AOS, jQuery$1, jqueryCountdown, scrollMonitor, Flickity, ionRangeslider, Isotope$1, jarallax, Plyr, Prism, SmoothScroll, svgInjector, twitterFetcher, Typed) { 'use strict';
+  typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('aos'), require('jquery'), require('scrollmonitor'), require('ion-rangeslider'), require('isotope-layout'), require('plyr'), require('prismjs'), require('smooth-scroll'), require('@tanem/svg-injector')) :
+  typeof define === 'function' && define.amd ? define(['exports', 'aos', 'jquery', 'scrollmonitor', 'ion-rangeslider', 'isotope-layout', 'plyr', 'prismjs', 'smooth-scroll', '@tanem/svg-injector'], factory) :
+  (global = global || self, factory(global.theme = {}, global.AOS, global.jQuery, global.scrollMonitor, null, global.Isotope, global.Plyr, global.Prism, global.SmoothScroll, global.SVGInjector));
+}(this, (function (exports, AOS, jQuery$1, scrollMonitor, ionRangeslider, Isotope$1, Plyr, Prism, SmoothScroll, svgInjector) { 'use strict';
 
   AOS = AOS && Object.prototype.hasOwnProperty.call(AOS, 'default') ? AOS['default'] : AOS;
   jQuery$1 = jQuery$1 && Object.prototype.hasOwnProperty.call(jQuery$1, 'default') ? jQuery$1['default'] : jQuery$1;
   scrollMonitor = scrollMonitor && Object.prototype.hasOwnProperty.call(scrollMonitor, 'default') ? scrollMonitor['default'] : scrollMonitor;
-  Flickity = Flickity && Object.prototype.hasOwnProperty.call(Flickity, 'default') ? Flickity['default'] : Flickity;
   Isotope$1 = Isotope$1 && Object.prototype.hasOwnProperty.call(Isotope$1, 'default') ? Isotope$1['default'] : Isotope$1;
-  jarallax = jarallax && Object.prototype.hasOwnProperty.call(jarallax, 'default') ? jarallax['default'] : jarallax;
   Plyr = Plyr && Object.prototype.hasOwnProperty.call(Plyr, 'default') ? Plyr['default'] : Plyr;
   Prism = Prism && Object.prototype.hasOwnProperty.call(Prism, 'default') ? Prism['default'] : Prism;
   SmoothScroll = SmoothScroll && Object.prototype.hasOwnProperty.call(SmoothScroll, 'default') ? SmoothScroll['default'] : SmoothScroll;
-  twitterFetcher = twitterFetcher && Object.prototype.hasOwnProperty.call(twitterFetcher, 'default') ? twitterFetcher['default'] : twitterFetcher;
-  Typed = Typed && Object.prototype.hasOwnProperty.call(Typed, 'default') ? Typed['default'] : Typed;
-
   //
   AOS.init({
     once: true
@@ -1455,7 +1450,6 @@
 
   //
   Plyr.setup('[data-provider],.plyr');
-
   //
 
   (function ($) {
